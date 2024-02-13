@@ -1,0 +1,70 @@
+---
+// Import para traer los datos del cs.json al Hero
+import GitHub from "@/icons/GitHub.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import Mail from "@/icons/Mail.astro";
+import { basics } from "cv.json";
+import { parseConfigFileTextToJson } from "typescript";
+
+// Variables
+const { name, label, image, email, url,profiles} = basics;
+const { city, region } = basics.location;
+//
+const SOCIAL_ICONS: Record<string, any> = {
+    GitHub,
+    LinkedIn
+}
+---
+
+<section>
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <span>
+                <!-- Icono -->
+                {city}, {region}
+            </span>
+            <footer>
+                {
+                    email &&(
+                        <a
+                            href={`mailto:${email}`}
+                            title=`Enviar un mail a ${name} al correo ${email}`
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Mail/>
+                        </a>
+                    )
+                }
+                {
+                profiles.map(({network,url,username})=>{
+                    const Icon = SOCIAL_ICONS[network]
+
+                    return(
+                        <a
+                        href={url}
+                        title={`Visitar el perfil de ${name} en ${network}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <Icon />
+                        </a>
+                    )
+                })
+                }
+            </footer>
+        </div>
+        <figure>
+            <img
+                src="https://imgs.search.brave.com/Nh48gZxxt8L5bC4GjLzg1pGVvoHgI23U_4lXwABgSq0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/emFtemFyLmNvbS9p/bWFnZXMvZmlsZXR5/cGVzL2ljby5wbmc"
+                alt=`${name}`
+            />
+        </figure>
+    </div>
+</section>
+
+<style>
+    
+</style>
