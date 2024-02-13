@@ -4,7 +4,7 @@ import Section from "@components/Section.astro";
 
 // Import de los iconos
 import WorldMap from "@/icons/WorldMap.astro";
-import GitHub from "@/icons/Github.astro";
+import Github from "@/icons/Github.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import Mail from "@/icons/Mail.astro";
 
@@ -16,7 +16,7 @@ import { parseConfigFileTextToJson } from "typescript";
 const { name, label, image, email, url,profiles} = basics;
 const { city, region } = basics.location;
 const SOCIAL_ICONS: Record<string, any> = {
-    GitHub,
+    Github,
     LinkedIn
 }
 ---
