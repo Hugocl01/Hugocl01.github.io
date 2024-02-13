@@ -1,3 +1,11 @@
 {
     "extends": "astro/tsconfigs/strict"
+    /* - Sirve para haces un espacio de nombres similar al que usamos en PHP
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    }
+	*/
 }
