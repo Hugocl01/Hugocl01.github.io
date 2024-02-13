@@ -5,14 +5,14 @@
         "image": "",
         "email": "hugocayon@gmail.com",
         "phone": "+34 123 456 789",
-        "url": "https://johndoe.com",
-        "summary": "A summary of John Doe…",
+        "url": "https://hugo.com",
+        "summary": "Actualmente, soy estudiante de formación profesional de desarrollo de aplicaciones web. Vivo en Santander, España.",
         "location": {
-            "address": "2712 Broadway St",
-            "postalCode": "CA 94115",
-            "city": "San Francisco",
+            "address": "",
+            "postalCode": "39000",
+            "city": "Santander",
             "countryCode": "ES",
-            "region": "California"
+            "region": "Cantabria"
         },
         "profiles": [
             {
@@ -73,13 +73,98 @@
     ],
     "skills": [
         {
-            "name": "Web Development",
+            "name": "HTML",
             "level": "Master",
             "keywords": [
-                "HTML",
-                "CSS",
+                "Desarrollo Web",
+                "Frontend"
+            ]
+        },
+        {
+            "name": "CSS",
+            "level": "Master",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "JavaScript",
+            "level": "Master",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "Backend",
+                "Fullstack"
+            ]
+        },
+        {
+            "name": "Tailwind",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "CSS Framework",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "TypeScript",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "Backend",
+                "JavaScript Superset"
+            ]
+        },
+        {
+            "name": "Node",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Backend",
                 "JavaScript",
-                "PHP"
+                "Servidor"
+            ]
+        },
+        {
+            "name": "MySQL",
+            "level": "Avanzado",
+            "keywords": [
+                "Bases de Datos",
+                "SQL",
+                "Almacenamiento de Datos",
+                "Backend"
+            ]
+        },
+        {
+            "name": "Git",
+            "level": "Avanzado",
+            "keywords": [
+                "Control de Versiones",
+                "Colaboración",
+                "Código Fuente"
+            ]
+        },
+        {
+            "name": "GitHub",
+            "level": "Avanzado",
+            "keywords": [
+                "Control de Versiones",
+                "Colaboración",
+                "Código Fuente",
+                "Git"
+            ]
+        },
+        {
+            "name":"Astro",
+            "level" : "Principiante",
+            "keywords":[
+                "Desarrollo Web",
+                "Frontend",
+                "Diseño Responsive"
             ]
         }
     ],
