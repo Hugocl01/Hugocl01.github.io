@@ -1,5 +1,8 @@
 ---
+// Import de Section, es un componente que uso para meter cada una de las secciones de la web
 import Section from "@components/Section.astro";
+
+// Import de los iconos
 import HTML from "@/icons/html.astro";
 import CSS from "@/icons/css.astro";
 import JavaScript from "@/icons/javascript.astro";
@@ -9,9 +12,11 @@ import MySQL from "@/icons/mysql.astro";
 import Git from "@/icons/git.astro";
 import GitHub from "@/icons/GitHub.astro";
 import Tailwind from "@/icons/tailwind.astro";
-import Astro from "@/icons/astro.astro";
+
+// Import para traer los datos del cs.json al Skills
 import { skills } from "cv.json";
 
+// Constantes
 const SKILLS_ICONS: Record<string, any> = {
     HTML,
     CSS,

@@ -157,15 +157,6 @@
                 "Código Fuente",
                 "Git"
             ]
-        },
-        {
-            "name":"Astro",
-            "level" : "Principiante",
-            "keywords":[
-                "Desarrollo Web",
-                "Frontend",
-                "Diseño Responsive"
-            ]
         }
     ],
     "languages": [
@@ -189,14 +180,15 @@
     ],
     "projects": [
         {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
-            "description": "Description...",
+            "name": "Portfolio",
+            "isActive": true,
+            "description": "Portfolio personal desarrollado con Astro",
             "highlights": [
-                "Won award at AIHacks 2016"
+                "Portfolio personal",
+                "Curriculum vitae"
             ],
-            "url": "https://project.com/"
+            "url": "https://github.com/Hugocl01/hugocl01.github.io",
+            "github": "https://github.com/Hugocl01/hugocl01.github.io"
         }
     ]
 }
