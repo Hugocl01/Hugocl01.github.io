@@ -16,12 +16,14 @@ Inside of the project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── About.astro
-│   │   ├── Card.astro
-│   │   ├── Education.astro
-│   │   ├── Hero.astro
-│   │   ├── Projects.astro
-│   │   └── Skills.astro
+│   │   ├── Sections
+│   │   │   ├── About.astro
+│   │   │   ├── Card.astro
+│   │   │   ├── Education.astro
+│   │   │   ├── Hero.astro
+│   │   │   ├── Projects.astro
+│   │   │   └── Skills.astro
+│   │   └── Section.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   ├── pages/
