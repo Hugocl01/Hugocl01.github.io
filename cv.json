@@ -2,7 +2,7 @@
     "basics": {
         "name": "Hugo",
         "label": "Desarrollador Web",
-        "image": "",
+        "image": "https://imgs.search.brave.com/B7D1tkrHWdjtScPTvSKLWjQK0N9ZefWAjmX0DRkzWb0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzA0L2phdmFzY3Jp/cHQtbG9nby5wbmc",
         "email": "hugocayon@gmail.com",
         "phone": "+34 123 456 789",
         "url": "https://hugo.com",
@@ -101,11 +101,31 @@
         },
         {
             "name": "Tailwind",
+            "level": "Medio",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "CSS Framework",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "Bootstrap",
             "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
                 "Frontend",
                 "CSS Framework",
+                "Diseño Responsive"
+            ]
+        },
+        {
+            "name": "Astro",
+            "level": "Medio",
+            "keywords": [
+                "Desarrollo Web",
+                "Frontend",
+                "Web Framework",
                 "Diseño Responsive"
             ]
         },
@@ -127,6 +147,25 @@
                 "Backend",
                 "JavaScript",
                 "Servidor"
+            ]
+        },
+        {
+            "name": "PHP",
+            "level": "Avanzado",
+            "keywords": [
+                "Desarrollo Web",
+                "Backend",
+                "Servidor"
+            ]
+        },
+        {
+            "name": "Laravel",
+            "level": "Medio",
+            "keywords": [
+                "Desarrollo Web",
+                "Servidor",
+                "PHP Framework",
+                "Backend"
             ]
         },
         {
