@@ -24,6 +24,19 @@ Inside of the project, you'll see the following folders and files:
 │   │   │   ├── Projects.astro
 │   │   │   └── Skills.astro
 │   │   └── Section.astro
+│   ├── icons
+│   │   ├── css.astro
+│   │   ├── git.astro
+│   │   ├── Gihub.astro
+│   │   ├── html.astro
+│   │   ├── javascript.astro
+│   │   ├── LinkedIn.astro
+│   │   ├── Mail.astro
+│   │   ├── mysql.astro
+│   │   ├── node.astro
+│   │   ├── tailwind.astro
+│   │   ├── typescript.astro
+│   │   └── WorldMap.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   ├── pages/
