@@ -21,6 +21,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   │   │   ├── Card.astro
 │   │   │   ├── Education.astro
 │   │   │   ├── Hero.astro
+│   │   │   ├── Languages.astro
 │   │   │   ├── Projects.astro
 │   │   │   └── Skills.astro
 │   │   └── Section.astro
