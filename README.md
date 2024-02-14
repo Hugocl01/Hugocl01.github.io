@@ -56,7 +56,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 Este proyecto es un sitio web de portafolio basado en Astro. Astro es un generador de sitios estáticos moderno que permite construir sitios web más rápidos con un enfoque en el rendimiento y la experiencia del desarrollador. El portafolio muestra varias secciones como Acerca de mí, Educación, Habilidades y Proyectos.
 
 ### Estructura del Proyecto
-* .github/ workflows/ deploy.yml
+1. .github/ workflows/ deploy.yml
 Flujo de trabajo de GitHub Actions para implementar el proyecto. Probablemente incluya pasos para compilar y desplegar el sitio automáticamente.
 2. .vscode/ extensions.json
 Archivo de configuración para las preferencias de Visual Studio Code, especificando extensiones recomendadas para el proyecto.
@@ -80,48 +80,27 @@ Directorio que contiene componentes Astro para diferentes íconos utilizados en 
 Componente de diseño para definir la estructura general del sitio.
 9. src/ pages/ index.astro
 Punto de entrada principal para el sitio web, probablemente conteniendo la estructura y contenido de la página de inicio.
-10. src/ env.d.ts
-diff
-Copy code
-- Archivo de declaración TypeScript para variables de entorno.
-11. .gitignore
-diff
-Copy code
-- Especifica archivos no rastreados intencionalmente que se deben ignorar en Git.
-12. astro.config.mjs
-diff
-Copy code
-- Archivo de configuración para Astro, donde se definen varias configuraciones y complementos para el proyecto.
-13. cv.json
-diff
-Copy code
-- Archivo JSON que contiene datos para el currículum vitae, posiblemente utilizado para generar contenido dinámico en el sitio web.
-14. package-lock.json
-diff
-Copy code
-- Archivo generado automáticamente utilizado para bloquear las versiones de las dependencias.
-15. package.json
-css
-Copy code
-- Archivo de configuración para proyectos Node.js, especificando detalles del proyecto y dependencias.
-16. README.md
-css
-Copy code
-- Documentación del proyecto que proporciona una descripción general e instrucciones para el proyecto.
-17. tailwind.config.mjs
-diff
-Copy code
-- Archivo de configuración para Tailwind CSS, un popular marco de trabajo de CSS.
-18. tsconfig.json
-css
-Copy code
-- Archivo de configuración para TypeScript, especificando opciones del compilador y configuraciones del proyecto.
-Uso
-Instalar Dependencias: Ejecutar npm install para instalar las dependencias del proyecto.
-Iniciar Servidor de Desarrollo: Utilizar npm run dev para iniciar el servidor de desarrollo.
-Compilar el Proyecto: Para compilar en producción, ejecutar npm run build.
-Desplegar: El proyecto podría estar configurado para implementarse continuamente utilizando GitHub Actions.
-Notas Adicionales
-Asegúrate de revisar el contenido específico dentro de cada componente de Astro para la personalización y población de datos.
-Consulta los archivos de configuración de Astro y otros para afinar el proyecto según sea necesario.
-Siéntete libre de actualizar esta documentación a medida que el proyecto evoluciona, añadiendo nuevas características o componentes. ¡Buena suerte con tu proyecto de portafolio! 🚀
+10.  src/ env.d.ts
+Archivo de declaración TypeScript para variables de entorno.
+11.  .gitignore
+Especifica archivos no rastreados intencionalmente que se deben ignorar en Git.
+12.  astro.config.mjs
+Archivo de configuración para Astro, donde se definen varias configuraciones y complementos para el proyecto.
+13.  cv.json
+Archivo JSON que contiene datos para el currículum vitae, posiblemente utilizado para generar contenido dinámico en el sitio web.
+14.  package-lock.json
+Archivo generado automáticamente utilizado para bloquear las versiones de las dependencias.
+15.  package.json
+Archivo de configuración para proyectos Node.js, especificando detalles del proyecto y dependencias.
+16.  README.md
+Documentación del proyecto que proporciona una descripción general e instrucciones para el proyecto.
+17.  tailwind.config.mjs
+Archivo de configuración para Tailwind CSS, un popular marco de trabajo de CSS.
+18.  tsconfig.json
+Archivo de configuración para TypeScript, especificando opciones del compilador y configuraciones del proyecto.
+
+### Uso
+Instalar Dependencias: Ejecutar `npm install` para instalar las dependencias del proyecto.
+Iniciar Servidor de Desarrollo: Utilizar `npm run` dev para iniciar el servidor de desarrollo.
+Compilar el Proyecto: Para compilar en producción, ejecutar `npm run build`.
+Desplegar: El proyecto podría esta configurado para implementarse continuamente utilizando GitHub Actions. 
