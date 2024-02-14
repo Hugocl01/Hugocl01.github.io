@@ -101,6 +101,9 @@ Archivo de configuración para TypeScript, especificando opciones del compilador
 
 ### Uso
 Instalar Dependencias: Ejecutar `npm install` para instalar las dependencias del proyecto.
+
 Iniciar Servidor de Desarrollo: Utilizar `npm run` dev para iniciar el servidor de desarrollo.
+
 Compilar el Proyecto: Para compilar en producción, ejecutar `npm run build`.
+
 Desplegar: El proyecto podría esta configurado para implementarse continuamente utilizando GitHub Actions. 
