@@ -53,10 +53,10 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 └── tsconfig.json
 ```
 
-### Visión General
+## Visión General
 Este proyecto es un sitio web de portafolio basado en Astro. Astro es un generador de sitios estáticos moderno que permite construir sitios web más rápidos con un enfoque en el rendimiento y la experiencia del desarrollador. El portafolio muestra varias secciones como Acerca de mí, Educación, Habilidades y Proyectos.
 
-### Estructura del Proyecto
+## Estructura archivos
 1. .github/ workflows/ deploy.yml
 Flujo de trabajo de GitHub Actions para implementar el proyecto. Probablemente incluya pasos para compilar y desplegar el sitio automáticamente.
 2. .vscode/ extensions.json
@@ -100,7 +100,7 @@ Archivo de configuración para Tailwind CSS, un popular marco de trabajo de CSS.
 18.  tsconfig.json
 Archivo de configuración para TypeScript, especificando opciones del compilador y configuraciones del proyecto.
 
-### Uso
+## Uso
 Instalar Dependencias: Ejecutar `npm install` para instalar las dependencias del proyecto.
 
 Iniciar Servidor de Desarrollo: Utilizar `npm run` dev para iniciar el servidor de desarrollo.
