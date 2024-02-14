@@ -42,13 +42,13 @@
     ],
     "education": [
         {
-            "institution": "University",
-            "url": "https://institution.com/",
-            "area": "Software Development",
-            "studyType": "Bachelor",
+            "institution": "IES Miguel Herrero Pereda",
+            "url": "https://www.educantabria.es/web/ies-miguel-herrero-pereda",
+            "area": "Desarrollo de aplicaciones web",
+            "studyType": "Formación profesional",
             "startDate": "2021-01-01",
-            "endDate": "2024-01-01",
-            "score": "4.0",
+            "endDate": null,
+            "score": "",
             "courses": [
                 "DB1101 - Basic SQL"
             ]
@@ -180,11 +180,11 @@
     ],
     "projects": [
         {
-            "name": "Portfolio",
+            "name": "Portafolio",
             "isActive": true,
-            "description": "Portfolio personal desarrollado con Astro",
+            "description": "Portafolio personal desarrollado con Astro",
             "highlights": [
-                "Portfolio personal",
+                "Portafolio personal",
                 "Curriculum vitae"
             ],
             "url": "https://github.com/Hugocl01/hugocl01.github.io",

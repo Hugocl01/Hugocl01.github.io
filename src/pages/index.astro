@@ -8,9 +8,13 @@ import About from "@components/Sections/About.astro";
 import Education from "@components/Sections/Education.astro";
 import Skills from "@components/Sections/Skills.astro";
 import Projects from "@components/Sections/Projects.astro";
+
+//
+import { basics } from "@cv";
+const { name } = basics;
 ---
 
-<Layout title="Portfolio">
+<Layout title={`Portafolio de ${name}`}>
     <main>
         <Hero />
         <About />
