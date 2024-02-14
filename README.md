@@ -26,15 +26,18 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   │   │   └── Skills.astro
 │   │   └── Section.astro
 │   ├── icons
+│   │   ├── bootstrap.astro
 │   │   ├── css.astro
 │   │   ├── git.astro
 │   │   ├── Gihub.astro
 │   │   ├── html.astro
 │   │   ├── javascript.astro
+│   │   ├── laravel.astro
 │   │   ├── LinkedIn.astro
 │   │   ├── Mail.astro
 │   │   ├── mysql.astro
 │   │   ├── node.astro
+│   │   ├── php.astro
 │   │   ├── tailwind.astro
 │   │   ├── typescript.astro
 │   │   └── WorldMap.astro
