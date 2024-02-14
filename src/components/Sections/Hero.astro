@@ -19,6 +19,17 @@ const SOCIAL_ICONS: Record<string, any> = {
     GitHub,
     LinkedIn
 }
+
+// Almacena en githubUrl la url del perfil de GitHub
+const githubInfo = profiles.find(({ network }) => network === "GitHub")
+const githubUrl = githubInfo?.url
+
+// Almacena en linkedUrl la url del perfil de LinkeIn
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedUrl = linkedInfo?.url
+
+// Crea una cadena con los valores que no sean false separados por " • "
+const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ")
 ---
 
 <Section>
@@ -30,7 +41,10 @@ const SOCIAL_ICONS: Record<string, any> = {
                 <WorldMap />
                 {city}, {region}
             </span>
-            <footer>
+            <footer class="print">
+                {printInfo}
+              </footer>
+            <footer class="no-print">
                 {
                     email &&(
                         <a

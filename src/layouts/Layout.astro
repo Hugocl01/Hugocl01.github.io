@@ -1,9 +1,13 @@
 ---
+import { basics } from "@cv";
+
 interface Props {
     title: string;
 }
 
 const { title } = Astro.props;
+
+const { image, summary, url } = basics;
 ---
 
 <!doctype html>
@@ -13,6 +17,7 @@ const { title } = Astro.props;
         <meta name="description" content="Astro description" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preload" as="image" href={image} />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
@@ -20,6 +25,7 @@ const { title } = Astro.props;
         <slot />
     </body>
 </html>
+
 <style is:global>
     html {
         font-family:
@@ -95,5 +101,27 @@ const { title } = Astro.props;
         line-height: 1.5;
         margin: 0;
         text-wrap: pretty;
+    }
+
+    .print {
+        display: none !important;
+    }
+
+    @media print {
+        .no-print {
+            display: none !important;
+        }
+
+        .print {
+            display: block !important;
+        }
+
+        astro-dev-toolbar {
+            display: none !important;
+        }
+
+        article {
+            break-inside: avoid;
+        }
     }
 </style>
