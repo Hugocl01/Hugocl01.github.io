@@ -15,6 +15,7 @@ import Tailwind from "@/icons/tailwind.astro";
 import Bootstrap from "@/icons/bootstrap.astro";
 import PHP from "@/icons/php.astro";
 import Laravel from "@/icons/laravel.astro";
+import AstroIcon from "@/icons/AstroIcon.astro";
 
 // Import para traer los datos del cs.json al Skills
 import { skills } from "@cv";
@@ -33,6 +34,7 @@ const SKILLS_ICONS: Record<string, any> = {
     Bootstrap,
     PHP,
     Laravel,
+    AstroIcon,
 };
 ---
 
@@ -41,7 +43,12 @@ const SKILLS_ICONS: Record<string, any> = {
         {
             skills.map(({ name }) => {
                 const iconName = name;
-                const Icon = SKILLS_ICONS[iconName];
+                var Icon;
+                if (iconName == "Astro") {
+                    Icon = SKILLS_ICONS["AstroIcon"];
+                } else {
+                    Icon = SKILLS_ICONS[iconName];
+                }
                 return (
                     <li>
                         <span>{name}</span>
