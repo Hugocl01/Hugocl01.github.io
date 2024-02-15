@@ -26,6 +26,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   │   │   └── Skills.astro
 │   │   └── Section.astro
 │   ├── icons
+│   │   ├── AstroIcon.astro
 │   │   ├── bootstrap.astro
 │   │   ├── css.astro
 │   │   ├── git.astro
