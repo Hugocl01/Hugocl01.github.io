@@ -8,6 +8,9 @@ interface Props {
 const { title } = Astro.props;
 
 const { image, summary, url } = basics;
+
+// Fuente
+import "@fontsource-variable/jetbrains-mono";
 ---
 
 <!doctype html>
@@ -34,7 +37,7 @@ const { image, summary, url } = basics;
 <style is:global>
     html {
         font-family:
-            JetBrains Mono,
+            "JetBrains Mono Variable",
             Menlo,
             Monaco,
             Lucida Console,
