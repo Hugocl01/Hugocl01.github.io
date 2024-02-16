@@ -29,7 +29,7 @@ const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
 const linkedUrl = linkedInfo?.url
 
 // Crea una cadena con los valores que no sean false separados por " • "
-const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ")
+const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -102,10 +102,11 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ")
 
     h1 {
         font-size: 2rem;
+        color: var(--text-h1);
     }
 
     h2 {
-        color: #444;
+        color: var(--text-h2-hero);
         font-weight: 500;
         font-size: 1.1rem;
         text-wrap: balance;
@@ -119,16 +120,16 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ")
     }
 
     span{
-        color: #666;
+        color: var(--text-hero-span);
         display: flex;
         align-items: center;
         gap: 0.25rem;
         font-size: 0.85rem;
-        letter-spacing: -0.05rem    ;
+        letter-spacing: -0.05rem;
     }
 
     footer {
-        color: #555;
+        color: var(--text-footer);
         font-size: 0.65rem;
         display: flex;
         gap: 6px;
@@ -136,11 +137,11 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ")
     }
 
     footer a {
-        color: #777;
+        color: var(--text-a);
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #eee;
+        border: 1px solid var(--border-a);
         padding: 4px;
         height: 32px;
         width: 32px;
@@ -149,8 +150,8 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ")
     }
 
     footer a:hover{
-        color: #eee;
-        background-color: #777;
+        color: var(--text-a-hover);
+        background-color: var(--background-a-hover);
     }
 
     @media (width <= 700px) {

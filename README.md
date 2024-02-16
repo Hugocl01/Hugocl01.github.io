@@ -18,13 +18,14 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   ├── components/
 │   │   ├── Sections
 │   │   │   ├── About.astro
-│   │   │   ├── Card.astro
 │   │   │   ├── Education.astro
 │   │   │   ├── Hero.astro
 │   │   │   ├── Languages.astro
 │   │   │   ├── Projects.astro
 │   │   │   └── Skills.astro
-│   │   └── Section.astro
+│   │   ├── Card.astro
+│   │   ├── Section.astro
+│   │   └── ThemeChange.astro
 │   ├── icons
 │   │   ├── AstroIcon.astro
 │   │   ├── bootstrap.astro
@@ -107,8 +108,10 @@ Archivo de configuración para TypeScript, especificando opciones del compilador
 ## Uso
 Instalar Dependencias: Ejecutar `npm install` para instalar las dependencias del proyecto.
 
+Actulizar Dependencias: Ejecutar `npm update` para actualizar las dependencias del proyecto.
+
 Iniciar Servidor de Desarrollo: Utilizar `npm run` dev para iniciar el servidor de desarrollo.
 
 Compilar el Proyecto: Para compilar en producción, ejecutar `npm run build`.
 
-Desplegar: El proyecto podría esta configurado para implementarse continuamente utilizando GitHub Actions. 
+Desplegar: El proyecto podría esta configurado para implementarse utilizando GitHub Actions. 

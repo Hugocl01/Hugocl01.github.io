@@ -11,6 +11,8 @@ const { image, summary, url } = basics;
 
 // Fuente
 import "@fontsource-variable/jetbrains-mono";
+
+import Toggle from "@/components/ThemeChange.astro";
 ---
 
 <!doctype html>
@@ -31,10 +33,100 @@ import "@fontsource-variable/jetbrains-mono";
     </head>
     <body>
         <slot />
+        <Toggle />
     </body>
 </html>
 
 <style is:global>
+    :root {
+        /* Colores de fondos */
+        --background: #fff;
+        --background-span: #eee;
+        --background-a-hover: #777;
+
+        /* Colores de textos */
+        --text-p: #555;
+        --text-h1: #000;
+        --text-h2: #000;
+        --text-h2-hero: #444;
+        --text-h2: #444;
+        --text-h3: #111;
+        --text-hero-span: #666;
+        --text-projects-span: #444;
+        --text-footer: #555;
+        --text-a: #777;
+        --text-a-projects: #111;
+        --text-a-hover: #eee;
+        --text-time: #555;
+        --text-li: #333;
+
+        /* Colores de sombras */
+        --shadow-projects-article: #f2f2f2;
+        --box-shadow-projects-article: rgba(0, 0, 0, 0.1);
+
+        /* Colores bordes */
+        --border-a: #eee;
+    }
+
+    [data-theme="light"] {
+        /* Colores de fondos */
+        --background: #fff;
+        --background-span: #eee;
+        --background-a-hover: #777;
+
+        /* Colores de textos */
+        --text-p: #555;
+        --text-h1: #000;
+        --text-h2: #000;
+        --text-h2-hero: #444;
+        --text-h2: #444;
+        --text-h3: #111;
+        --text-hero-span: #666;
+        --text-projects-span: #444;
+        --text-footer: #555;
+        --text-a: #777;
+        --text-a-projects: #111;
+        --text-a-hover: #eee;
+        --text-time: #555;
+        --text-li: #333;
+
+        /* Colores de sombras */
+        --shadow-projects-article: #f2f2f2;
+        --box-shadow-projects-article: rgba(0, 0, 0, 0.1);
+
+        /* Colores bordes */
+        --border-a: #eee;
+    }
+
+    [data-theme="dark"] {
+        /* Colores de fondos */
+        --background: #111;
+        --background-span: #1f1f1f;
+        --background-a-hover: #fff;
+
+        /* Colores de textos */
+        --text-p: #b1b1b1;
+        --text-h1: #fff;
+        --text-h2: #ddd;
+        --text-h2-hero: #bbb;
+        --text-h3: #fff;
+        --text-hero-span: #ccc;
+        --text-projects-span: #cecece;
+        --text-footer: #eee;
+        --text-a: #aaa;
+        --text-a-projects: #ddd;
+        --text-a-hover: #111;
+        --text-time: #b1b1b1;
+        --text-li: #ccc;
+
+        /* Colores de sombras */
+        --shadow-projects-article: #222;
+        --box-shadow-projects-article: rgba(255, 255, 255, 0.1);
+
+        /* Colores bordes */
+        --border-a: #222;
+    }
+
     html {
         font-family:
             "JetBrains Mono Variable",
@@ -44,7 +136,7 @@ import "@fontsource-variable/jetbrains-mono";
             "Courier New",
             Courier,
             monospace;
-        background: #fff;
+        background: var(--background);
     }
 
     body,
@@ -70,14 +162,17 @@ import "@fontsource-variable/jetbrains-mono";
 
     h1 {
         font-size: 1.7rem; /* 1.5 veces el tamaño de fuente base del documento para h1 */
+        color: var(--text-h1);
     }
 
     h2 {
         font-size: 1.2rem; /* 1.2 veces el tamaño de fuente base del documento para h2 */
+        color: var(--text-h2);
     }
 
     h3 {
         font-size: 1rem; /* Tamaño de fuente base del documento para h3 */
+        color: var(--text-h3);
     }
 
     h1,
@@ -100,7 +195,7 @@ import "@fontsource-variable/jetbrains-mono";
     }
 
     p {
-        color: #666;
+        color: var(--text-p);
         font-size: 1rem;
         line-height: 1.5;
         margin: 0;
