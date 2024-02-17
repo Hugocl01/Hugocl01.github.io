@@ -23,7 +23,6 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   │   │   ├── Languages.astro
 │   │   │   ├── Projects.astro
 │   │   │   └── Skills.astro
-│   │   ├── Card.astro
 │   │   ├── Loader.astro
 │   │   ├── Section.astro
 │   │   └── ThemeChange.astro
@@ -73,37 +72,42 @@ Archivo de configuración para las preferencias de Visual Studio Code, especific
 El favicon para el sitio web, típicamente el pequeño icono mostrado en la pestaña del navegador.
 5. src/ components/ Sections/
 Directorio que contiene componentes Astro para diferentes secciones del portafolio.
-About.astro: Componente para la sección Acerca de mí.
-Card.astro: Componente para mostrar tarjetas, probablemente utilizado en varias secciones.
-Education.astro: Componente para la sección de Educación.
-Hero.astro: Componente para la sección de héroe/cabecera.
-Projects.astro: Componente para mostrar detalles de proyectos.
-Skills.astro: Componente para mostrar habilidades.
-6. src/ components/ Section.astro
-Componente general para secciones, posiblemente utilizado como una plantilla para diferentes secciones.
-7. src/ icons/
+
++ About.astro: Componente para la sección Acerca de mí.
+
++ Education.astro: Componente para la sección de Educación.
+
++ Hero.astro: Componente para la sección de cabecera.
+
++ Languajes.astro: Componente para la sección de Idiomas
+
++ Projects.astro: Componente para mostrar detalles de Proyectos.
+
++ Skills.astro: Componente para mostrar las Habilidades.
+
+1. src/ components/ Section.astro
+Componentes generales y secciones que a su vez pueden usar dichos componentes.
+1. src/ icons/
 Directorio que contiene componentes Astro para diferentes íconos utilizados en el proyecto.
-8. src/ layouts/ Layout.astro
+1. src/ layouts/ Layout.astro
 Componente de diseño para definir la estructura general del sitio.
-9. src/ pages/ index.astro
+1. src/ pages/ index.astro
 Punto de entrada principal para el sitio web, probablemente conteniendo la estructura y contenido de la página de inicio.
-10.  src/ env.d.ts
+1.   src/ env.d.ts
 Archivo de declaración TypeScript para variables de entorno.
-11.  .gitignore
+1.   .gitignore
 Especifica archivos no rastreados intencionalmente que se deben ignorar en Git.
-12.  astro.config.mjs
+1.   astro.config.mjs
 Archivo de configuración para Astro, donde se definen varias configuraciones y complementos para el proyecto.
-13.  cv.json
+1.   cv.json
 Archivo JSON que contiene datos para el currículum vitae, posiblemente utilizado para generar contenido dinámico en el sitio web.
-14.  package-lock.json
+1.   package-lock.json
 Archivo generado automáticamente utilizado para bloquear las versiones de las dependencias.
-15.  package.json
+1.   package.json
 Archivo de configuración para proyectos Node.js, especificando detalles del proyecto y dependencias.
-16.  README.md
-Documentación del proyecto que proporciona una descripción general e instrucciones para el proyecto.
-17.  tailwind.config.mjs
+1.    tailwind.config.mjs
 Archivo de configuración para Tailwind CSS, un popular marco de trabajo de CSS.
-18.  tsconfig.json
+1.    tsconfig.json
 Archivo de configuración para TypeScript, especificando opciones del compilador y configuraciones del proyecto.
 
 ## Uso
