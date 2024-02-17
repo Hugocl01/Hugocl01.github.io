@@ -122,32 +122,41 @@
     // Obtiene el elemento con el ID "checkbox" y aseguramos que sea un elemento de entrada (checkbox) utilizando la conversión "as HTMLInputElement"
     const checkbox = document.getElementById("checkbox") as HTMLInputElement;
 
-    // Verifica si la preferencia de color del sistema operativo es oscura (dark).
-    const prefersDarkMode =
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (prefersDarkMode) {
-        body.setAttribute("data-theme", "dark");
-        checkbox.checked = true;
+    // Función para aplicar el tema según la preferencia del sistema
+    function applySystemTheme() {
+        const prefersDarkMode = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+        ).matches;
+
+        if (prefersDarkMode) {
+            body.setAttribute("data-theme", "dark");
+            checkbox.checked = true;
+        } else {
+            body.setAttribute("data-theme", "light");
+            checkbox.checked = false;
+        }
     }
 
-    // Si el elemento se encuentra (no es nulo)
-    if (checkbox !== null) {
+    // Llama a la función para aplicar el tema antes de que la página esté completamente cargada
+    applySystemTheme();
+
+    // Agrega un escuchador de eventos "DOMContentLoaded" para el resto del código
+    document.addEventListener("DOMContentLoaded", function () {
         // Agrega un escuchador de eventos "change" al elemento checkbox
         checkbox.addEventListener("change", function () {
             // Verifica si la casilla de verificación está marcada
             if (this.checked) {
-                // Si está marcada, establecem el atributo "data-theme" del elemento "body" a "dark"
+                // Si está marcada, establece el atributo "data-theme" del elemento "body" a "dark"
                 body.setAttribute("data-theme", "dark");
             } else {
                 // Si no está marcada, establece el atributo "data-theme" del elemento "body" a "light"
                 body.setAttribute("data-theme", "light");
             }
         });
-    } else {
-        // Si el elemento no se encuentra, muestra un mensaje de error en la consola
-        console.error(
-            'Error: No se pudo encontrar el elemento con ID "checkbox".'
-        );
-    }
+
+        // Agrega un escuchador de eventos para detectar cambios en la preferencia de color del sistema
+        window
+            .matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", applySystemTheme);
+    });
 </script>
