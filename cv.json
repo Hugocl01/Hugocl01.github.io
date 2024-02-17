@@ -219,9 +219,9 @@
     ],
     "projects": [
         {
-            "name": "Portafolio",
+            "name": "Portfolio",
             "isActive": true,
-            "description": "Portafolio personal desarrollado con Astro",
+            "description": "Portfolio personal desarrollado con Astro",
             "highlights": [
                 "Portafolio personal",
                 "Curriculum vitae"
