@@ -1,13 +1,13 @@
-<div class="theme-switch-wrapper">
-    <label class="theme-switch" for="checkbox">
+<div class="theme-button-wrapper">
+    <label class="theme-button" for="checkbox">
         <input type="checkbox" id="checkbox" />
-        <div class="slider">
+        <div class="button">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
-                fill="#FCD53F"
+                fill="currentColor"
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
@@ -26,10 +26,10 @@
             </svg>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
-                fill="#FCD53F"
+                fill="currentColor"
                 stroke="currentColor"
                 stroke-width="2"
                 stroke-linecap="round"
@@ -44,107 +44,83 @@
 </div>
 
 <style>
-    /* TOGGLE  */
-    .theme-switch-wrapper {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    .theme-button-wrapper {
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: 20px;
+        right: 20px;
     }
 
-    .theme-switch {
-        display: inline-block;
-        height: 34px;
-        position: relative;
-        width: 60px;
+    .theme-button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
     }
 
-    .theme-switch input {
+    .button {
+        width: 40px; /* Ancho del botón */
+        height: 40px; /* Altura del botón */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ccc;
+        border-radius: 50%; /* Hace que el botón sea circular */
+        background-color: #fff; /* Color de fondo del botón */
+        overflow: hidden; /* Para asegurar que el contenido no se salga del círculo */
+    }
+
+    /* Estilo del checkbox (puedes personalizarlo según tus necesidades) */
+    #checkbox {
         display: none;
     }
 
-    .slider {
-        background-color: var(--slider-bg);
-        bottom: 0;
-        cursor: pointer;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transition: 0.4s;
-        border-radius: 34px;
+    /* Estilo de los iconos dentro del botón */
+    .theme-button svg {
+        width: 20px; /* Ajusta el ancho del icono */
+        height: 20px; /* Ajusta la altura del icono */
+        fill: currentColor; /* Utiliza el color actual del texto para el relleno */
     }
 
-    .slider:before {
-        background-color: var(--slider-bg-before);
-        bottom: 4px;
-        content: "";
-        height: 26px;
-        left: 4px;
-        position: absolute;
-        transition: 0.4s;
-        width: 26px;
-        border-radius: 50%;
-    }
-
-    input:checked + .slider {
-        background-color: var(--slider-input-bg);
-    }
-
-    input:checked + .slider:before {
-        transform: translateX(26px);
-    }
-
-    .slider svg {
-        color: #222;
-        position: absolute;
-        transition:
-            opacity 0.2s ease 0s,
-            transform 0.35s ease 0s;
-        pointer-events: none;
-    }
-
+    /* Estilo específico para el sol y la luna */
+    .feather-sun,
     .feather-moon {
-        opacity: 0;
-        left: 9px;
-        bottom: 9px;
-        transform: translateX(4px);
+        display: none; /* Oculta los SVG por defecto */
     }
 
-    .feather-sun {
-        opacity: 1;
-        right: 10px;
-        bottom: 9px;
-        transform: translateX(0px);
+    /* Estilo específico para el sol */
+    #checkbox:checked + .button .feather-sun {
+        display: block; /* Muestra el sol cuando el checkbox está marcado */
     }
 
-    input:checked + .slider .feather-moon {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    input:checked + .slider .feather-sun {
-        opacity: 0;
-        transform: translateX(-4px);
+    /* Estilo específico para la luna */
+    #checkbox:not(:checked) + .button .feather-moon {
+        display: block; /* Muestra la luna cuando el checkbox no está marcado */
     }
 </style>
 
 <script>
+    // Obtiene el elemento con el ID "checkbox" y aseguramos que sea un elemento de entrada (checkbox) utilizando la conversión "as HTMLInputElement"
     const checkbox = document.getElementById("checkbox") as HTMLInputElement;
 
+    // Si el elemento se encuentra (no es nulo)
     if (checkbox !== null) {
+        // Agrega un escuchador de eventos "change" al elemento checkbox
         checkbox.addEventListener("change", function () {
+            // Obtiene el elemento "body"
             const body = document.body;
 
+            // Verifica si la casilla de verificación está marcada
             if (this.checked) {
+                // Si está marcada, establecem el atributo "data-theme" del elemento "body" a "dark"
                 body.setAttribute("data-theme", "dark");
             } else {
+                // Si no está marcada, establece el atributo "data-theme" del elemento "body" a "light"
                 body.setAttribute("data-theme", "light");
             }
         });
     } else {
-        console.error('Error: Could not find element with ID "checkbox".');
+        // Si el elemento no se encuentra, muestra un mensaje de error en la consola
+        console.error(
+            'Error: No se pudo encontrar el elemento con ID "checkbox".'
+        );
     }
 </script>
