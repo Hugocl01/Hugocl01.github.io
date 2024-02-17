@@ -24,6 +24,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   │   │   ├── Projects.astro
 │   │   │   └── Skills.astro
 │   │   ├── Card.astro
+│   │   ├── Loader.astro
 │   │   ├── Section.astro
 │   │   └── ThemeChange.astro
 │   ├── icons

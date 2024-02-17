@@ -13,6 +13,7 @@ const { image, summary, url } = basics;
 import "@fontsource-variable/jetbrains-mono";
 
 import Toggle from "@/components/ThemeChange.astro";
+import Loader from "@components/Loader.astro";
 ---
 
 <!doctype html>
@@ -32,6 +33,7 @@ import Toggle from "@/components/ThemeChange.astro";
         <meta property="og:image" content="" />
     </head>
     <body>
+        <Loader />
         <slot />
         <Toggle />
     </body>
@@ -43,6 +45,7 @@ import Toggle from "@/components/ThemeChange.astro";
         --background: #fff;
         --background-span: #eee;
         --background-a-hover: #777;
+        --background-loader: rgb(255, 255, 255);
 
         /* Colores de textos */
         --text-p: #555;
@@ -73,6 +76,7 @@ import Toggle from "@/components/ThemeChange.astro";
         --background: #fff;
         --background-span: #eee;
         --background-a-hover: #777;
+        --background-loader: rgb(255, 255, 255);
 
         /* Colores de textos */
         --text-p: #555;
@@ -103,6 +107,7 @@ import Toggle from "@/components/ThemeChange.astro";
         --background: #111;
         --background-span: #1f1f1f;
         --background-a-hover: #fff;
+        --background-loader: rgba(17, 17, 17, 1);
 
         /* Colores de textos */
         --text-p: #b1b1b1;
