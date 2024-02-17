@@ -85,29 +85,29 @@ Directorio que contiene componentes Astro para diferentes secciones del portafol
 
 + Skills.astro: Componente para mostrar las Habilidades.
 
-1. src/ components/ Section.astro
+6. src/ components/ Section.astro
 Componentes generales y secciones que a su vez pueden usar dichos componentes.
-1. src/ icons/
+7. src/ icons/
 Directorio que contiene componentes Astro para diferentes íconos utilizados en el proyecto.
-1. src/ layouts/ Layout.astro
+8. src/ layouts/ Layout.astro
 Componente de diseño para definir la estructura general del sitio.
-1. src/ pages/ index.astro
+9. src/ pages/ index.astro
 Punto de entrada principal para el sitio web, probablemente conteniendo la estructura y contenido de la página de inicio.
-1.   src/ env.d.ts
+10.   src/ env.d.ts
 Archivo de declaración TypeScript para variables de entorno.
-1.   .gitignore
+11.   .gitignore
 Especifica archivos no rastreados intencionalmente que se deben ignorar en Git.
-1.   astro.config.mjs
+12.   astro.config.mjs
 Archivo de configuración para Astro, donde se definen varias configuraciones y complementos para el proyecto.
-1.   cv.json
+13.   cv.json
 Archivo JSON que contiene datos para el currículum vitae, posiblemente utilizado para generar contenido dinámico en el sitio web.
-1.   package-lock.json
+14.   package-lock.json
 Archivo generado automáticamente utilizado para bloquear las versiones de las dependencias.
-1.   package.json
+15.   package.json
 Archivo de configuración para proyectos Node.js, especificando detalles del proyecto y dependencias.
-1.    tailwind.config.mjs
+16.    tailwind.config.mjs
 Archivo de configuración para Tailwind CSS, un popular marco de trabajo de CSS.
-1.    tsconfig.json
+17.    tsconfig.json
 Archivo de configuración para TypeScript, especificando opciones del compilador y configuraciones del proyecto.
 
 ## Uso
