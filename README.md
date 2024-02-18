@@ -59,7 +59,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 ```
 
 ## Visión General
-Este proyecto es un sitio web de portafolio basado en Astro. Astro es un generador de sitios estáticos moderno que permite construir sitios web más rápidos con un enfoque en el rendimiento y la experiencia del desarrollador. El portafolio muestra varias secciones como Acerca de mí, Educación, Idiomas, Habilidades y Proyectos.
+Este proyecto es un sitio web de portfolio basado en Astro. Astro es un generador de sitios estáticos moderno que permite construir sitios web más rápidos con un enfoque en el rendimiento y la experiencia del desarrollador.
 
 ## Estructura archivos
 1. .github/ workflows/ deploy.yml
