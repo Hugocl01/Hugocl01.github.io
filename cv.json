@@ -230,30 +230,6 @@
             ],
             "url": "https://github.com/Hugocl01/hugocl01.github.io",
             "github": "https://github.com/Hugocl01/hugocl01.github.io"
-        },
-        {
-            "name": "Generador de contraseñas",
-            "isActive": true,
-            "description": "Generador de contraseñas aleatorias y personalizables",
-            "highlights": [
-                "JavaScript",
-                "HTML",
-                "CSS"
-            ],
-            "url": "https://github.com/Hugocl01",
-            "github": "https://github.com/Hugocl01"
-        },
-        {
-            "name": "Calculadora",
-            "isActive": true,
-            "description": "Calculadora de operaciones basicas",
-            "highlights": [
-                "JavaScript",
-                "HTML",
-                "CSS"
-            ],
-            "url": "https://hugocl01.github.io/Calculadora/",
-            "github": "https://github.com/Hugocl01/Calculadora"
         }
     ]
 }
