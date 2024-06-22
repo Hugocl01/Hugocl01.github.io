@@ -1,0 +1,16 @@
+---
+import { basics } from "@cv";
+
+const { name, image } = basics;
+---
+
+<img src={image} alt={name} />
+
+<style>
+    img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 6px;
+    }
+</style>

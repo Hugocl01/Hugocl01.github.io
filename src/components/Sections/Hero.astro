@@ -1,6 +1,7 @@
 ---
 // Import de Section, es un componente que uso para meter cada una de las secciones de la web
 import Section from "@components/Section.astro";
+import Image from "@components/Image.astro";
 
 // Import de los iconos
 import WorldMap from "@/icons/WorldMap.astro";
@@ -10,10 +11,9 @@ import Mail from "@/icons/Mail.astro";
 
 // Import para traer los datos del cs.json al Hero
 import { basics } from "@cv";
-import { parseConfigFileTextToJson } from "typescript";
 
 // Constantes
-const { name, label, image, email, profiles} = basics;
+const { name, label, email, profiles} = basics;
 const { city, region } = basics.location;
 const SOCIAL_ICONS: Record<string, any> = {
     GitHub,
@@ -76,10 +76,7 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ");
             </footer>
         </div>
         <figure>
-            <img
-                src=`${image}`
-                alt=`${name}`
-            />
+            <Image />
         </figure>
     </div>
 </Section>
@@ -110,13 +107,6 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ");
         font-weight: 500;
         font-size: 1.1rem;
         text-wrap: balance;
-    }
-
-     img {
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 128px;
-        border-radius: 6px;
     }
 
     span{
@@ -174,10 +164,6 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ");
 
     h2 {
       text-wrap: balance;
-    }
-
-    figure {
-      margin: 0 auto;
     }
   }
 </style>
