@@ -10,7 +10,7 @@ const { title } = Astro.props;
 const { image, summary, url } = basics;
 
 // Fuente
-import "@fontsource-variable/jetbrains-mono";
+import '@fontsource-variable/manrope';
 
 import Toggle from "@/components/ThemeChange.astro";
 import Loader from "@components/Loader.astro";
@@ -134,13 +134,16 @@ import Loader from "@components/Loader.astro";
 
     html {
         font-family:
-            "JetBrains Mono Variable",
+            "Manrope Variable",
             Menlo,
             Monaco,
             Lucida Console,
             "Courier New",
             Courier,
             monospace;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            word-spacing: 0.02em;
     }
 
     body {
@@ -189,6 +192,7 @@ import Loader from "@components/Loader.astro";
     h4 {
         margin: 0;
         font-family:
+            "Manrope Variable",
             system-ui,
             -apple-system,
             BlinkMacSystemFont,
