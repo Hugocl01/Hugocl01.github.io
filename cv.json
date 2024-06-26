@@ -4,7 +4,6 @@
         "label": "Desarrollador Web",
         "image": "https://cdn.icon-icons.com/icons2/3544/PNG/512/user_icon_224512.png",
         "email": "hugocayon@gmail.com",
-        "phone": "+34 123 456 789",
         "url": "https://hugo.com",
         "summary": "Actualmente, soy estudiante de formación profesional de desarrollo de aplicaciones web. Vivo en Santander, España.",
         "location": {
@@ -74,7 +73,7 @@
     "skills": [
         {
             "name": "HTML",
-            "level": "Master",
+            "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
                 "Frontend"
@@ -82,7 +81,7 @@
         },
         {
             "name": "CSS",
-            "level": "Master",
+            "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
                 "Frontend",
@@ -91,7 +90,7 @@
         },
         {
             "name": "JavaScript",
-            "level": "Master",
+            "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
                 "Frontend",
@@ -131,7 +130,7 @@
         },
         {
             "name": "TypeScript",
-            "level": "Avanzado",
+            "level": "Medio",
             "keywords": [
                 "Desarrollo Web",
                 "Frontend",
@@ -141,7 +140,7 @@
         },
         {
             "name": "Node",
-            "level": "Avanzado",
+            "level": "Medio",
             "keywords": [
                 "Desarrollo Web",
                 "Backend",
@@ -160,7 +159,7 @@
         },
         {
             "name": "Laravel",
-            "level": "Medio",
+            "level": "Avanzado",
             "keywords": [
                 "Desarrollo Web",
                 "Servidor",
