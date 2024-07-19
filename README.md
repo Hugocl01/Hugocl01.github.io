@@ -23,6 +23,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 │   │   │   ├── Languages.astro
 │   │   │   ├── Projects.astro
 │   │   │   └── Skills.astro
+│   │   ├── Image.astro
 │   │   ├── Loader.astro
 │   │   ├── Section.astro
 │   │   └── ThemeChange.astro
@@ -51,6 +52,7 @@ Dentro del proyecto, encontrarás las siguientes carpetas y archivos:
 ├── .gitignore 
 ├── astro.config.mjs
 ├── cv.json
+├── LICENSE.txt
 ├── package-lock.json 
 ├── package.json
 ├── README.md
