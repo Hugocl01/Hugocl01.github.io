@@ -1,7 +1,7 @@
 ---
 // Import de Section, es un componente que uso para meter cada una de las secciones de la web
 import Section from "@components/Section.astro";
-import Image from "@components/Image.astro";
+import {Image} from "astro:assets";
 
 // Import de los iconos
 import WorldMap from "@/icons/WorldMap.astro";
@@ -13,7 +13,7 @@ import Mail from "@/icons/Mail.astro";
 import { basics } from "@cv";
 
 // Constantes
-const { name, label, email, profiles} = basics;
+const { name, label, image, email, profiles} = basics;
 const { city, region } = basics.location;
 const SOCIAL_ICONS: Record<string, any> = {
     GitHub,
@@ -76,7 +76,16 @@ const printInfo = [email, githubUrl, linkedUrl].filter(Boolean).join(" • ");
             </footer>
         </div>
         <figure>
-            <Image />
+            <Image
+                src = {image}
+                alt = "Imagen de Hugo"
+                width = "128"
+                height = "128"
+                loading = "eager"
+                aspect-ratio ="1/1"
+                object-fit = "cover"
+                border-radius ="6px";
+            />
         </figure>
     </div>
 </Section>
