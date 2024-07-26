@@ -43,10 +43,22 @@
         {
             "institution": "IES Miguel Herrero Pereda",
             "url": "https://www.educantabria.es/web/ies-miguel-herrero-pereda",
-            "area": "Desarrollo de aplicaciones web",
+            "area": "Grado Superior de Desarrollo de aplicaciones web",
             "studyType": "Formación profesional",
             "startDate": "2021-01-01",
             "endDate": null,
+            "score": "",
+            "courses": [
+                "DB1101 - Basic SQL"
+            ]
+        },
+        {
+            "institution": "IES Santa Cruz",
+            "url": "https://www.educantabria.es/web/ies-miguel-herrero-pereda",
+            "area": "Grado Superior de Sistemas electrónicos y automatizados",
+            "studyType": "Formación profesional",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
             "score": "",
             "courses": [
                 "DB1101 - Basic SQL"
