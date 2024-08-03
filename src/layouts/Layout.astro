@@ -11,6 +11,9 @@ const { image, summary, url } = basics;
 
 import Loader from "@components/Loader.astro";
 import Toggle from "@/components/ThemeChange.astro";
+
+// Supports weights 100-900
+import '@fontsource-variable/inter';
 ---
 
 <!doctype html>
@@ -130,14 +133,8 @@ import Toggle from "@/components/ThemeChange.astro";
     }
 
     html {
-        font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            "Courier New",
-            Courier,
-            monospace;
-        font-weight: 300;
+        font-family: 'Inter Variable', monospace, sans-serif;
+        font-weight: 400;
         letter-spacing: 0.02em;
         word-spacing: 0.02em;
     }
@@ -168,17 +165,17 @@ import Toggle from "@/components/ThemeChange.astro";
     }
 
     h1 {
-        font-size: 1.7rem; /* 1.7 veces el tamaño de fuente base del documento para h1 */
+        font-size: 1.75rem; /* 1.75 veces el tamaño de fuente base del documento para h1 */
         color: var(--text-h1);
     }
 
     h2 {
-        font-size: 1.2rem; /* 1.2 veces el tamaño de fuente base del documento para h2 */
+        font-size: 1.5rem; /* 1.2 veces el tamaño de fuente base del documento para h2 */
         color: var(--text-h2);
     }
 
     h3 {
-        font-size: 1rem; /* Tamaño de fuente base del documento para h3 */
+        font-size: 1.4rem; /* Tamaño de fuente base del documento para h3 */
         color: var(--text-h3);
     }
 
@@ -204,7 +201,7 @@ import Toggle from "@/components/ThemeChange.astro";
 
     p {
         color: var(--text-p);
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 1.5;
         margin: 0;
         text-wrap: pretty;
