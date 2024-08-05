@@ -240,7 +240,7 @@
         {
             "name": "Portfolio",
             "isActive": true,
-            "description": "Portfolio personal desarrollado con Astro",
+            "description": "Portfolio personal desarrollado con Astro.",
             "highlights": [
                 "Astro",
                 "HTML",
@@ -250,6 +250,21 @@
             ],
             "url": "https://hugocl01.github.io/",
             "github": "https://github.com/Hugocl01/hugocl01.github.io"
+        },
+        {
+            "name": "Blog",
+            "isActive": true,
+            "description": "Blog informativo sobre la experiencia personal que adquiero durante mi formación.",
+            "highlights": [
+                "Astro",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Node",
+                "Markdown"
+            ],
+            "url": "https://github.com/Hugocl01/Blog",
+            "github": "https://github.com/Hugocl01/Blog"
         }
     ]
 }
